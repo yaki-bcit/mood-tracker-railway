@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'dist')))
 app.use('/api', apiRouter)
 
 app.get('/', (req, res) => {
-    res.sendFile('index.html')
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 export default app
